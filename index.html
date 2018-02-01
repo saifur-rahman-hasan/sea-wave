@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+        .content{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .headline{
+            font-family: Ubuntu;
+            font-size: 5em;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,.9);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- The video -->
+    <video autoplay loop id="myVideo">
+        <source src="videos/sea-wave.mp4" type="video/mp4">
+    </video>
+
+    <!-- Content -->
+    <div class="content">
+        <h1 class="headline">Hello world!</h1>
+    </div>
+
+</body>
+</html>
